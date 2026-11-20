@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        A single, light, action-bar-free theme: the banner is the header of the app,
+        so no Material/AppCompat action bar is wanted.
+    -->
+    <style name="Theme.AssignmentOne" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green_dark</item>
+        <item name="colorAccent">@color/light_green</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/green_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+</resources>
