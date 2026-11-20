@@ -1,0 +1,12 @@
+# Normalise line endings so the project behaves the same on Windows, macOS and Linux.
+* text=auto
+*.java text
+*.xml text
+*.gradle text
+*.properties text
+*.md text
+gradlew text eol=lf
+*.bat text eol=crlf
+*.png binary
+*.jpg binary
+*.jar binary
