@@ -19,6 +19,12 @@
             </intent-filter>
         </activity>
 
+        <!-- Detail screen: one topic at a time, launched with an explicit Intent. -->
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
     </application>
 
 </manifest>

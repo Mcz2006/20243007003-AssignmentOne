@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Detail screen (Part F).
+    A weighted header (icon + topic name on top of the campus photo) above a
+    scrollable white content area. Weights keep it responsive: no fixed sizes.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- ============ Header ============ -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="26">
+
+        <ImageView
+            android:id="@+id/headerImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/banner_image_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_campus" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/banner_scrim"
+            android:importantForAccessibility="no" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/header_padding">
+
+            <ImageView
+                android:id="@+id/headerIcon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/label_facilities"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_facilities" />
+
+            <TextView
+                android:id="@+id/headerTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical|end"
+                android:shadowColor="@color/banner_shadow"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:text="@string/label_facilities"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- ============ Content ============ -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="74"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/detail_padding">
+
+            <TextView
+                android:id="@+id/detailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/detail_placeholder_title"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/detail_title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_spacing"
+                android:lineSpacingExtra="@dimen/detail_line_spacing"
+                android:text="@string/detail_placeholder_content"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/detail_content_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
