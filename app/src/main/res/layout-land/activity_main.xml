@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Landscape home screen (Part D).
+    This file is a copy of the portrait layout with one change: the button panel
+    is a single horizontal row, so the four ImageButtons sit next to each other
+    instead of in a 2 x 2 grid. Everything else (banner, weights, ids) is identical.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical">
+
+    <!-- ============ Banner ============ -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="54">
+
+        <ImageView
+            android:id="@+id/bannerImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/banner_image_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_campus" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/banner_scrim"
+            android:importantForAccessibility="no" />
+
+        <TextView
+            android:id="@+id/bannerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/banner_margin"
+            android:layout_marginEnd="@dimen/banner_margin"
+            android:gravity="center"
+            android:shadowColor="@color/banner_shadow"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="6"
+            android:text="@string/banner_title"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <!-- ============ Four topic buttons in one row ============ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="46"
+        android:background="@color/green"
+        android:orientation="horizontal"
+        android:padding="@dimen/panel_padding">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/buttonFacilities"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_green_selector"
+                android:contentDescription="@string/label_facilities"
+                android:onClick="onFacilitiesClick"
+                android:padding="@dimen/button_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_facilities" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_spacing"
+                android:text="@string/label_facilities"
+                android:textColor="@color/white"
+                android:textSize="@dimen/label_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/buttonEvents"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_green_selector"
+                android:contentDescription="@string/label_events"
+                android:onClick="onEventsClick"
+                android:padding="@dimen/button_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_events" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_spacing"
+                android:text="@string/label_events"
+                android:textColor="@color/white"
+                android:textSize="@dimen/label_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/buttonClubs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_green_selector"
+                android:contentDescription="@string/label_clubs"
+                android:onClick="onClubsClick"
+                android:padding="@dimen/button_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_clubs" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_spacing"
+                android:text="@string/label_clubs"
+                android:textColor="@color/white"
+                android:textSize="@dimen/label_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/buttonSupport"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_green_selector"
+                android:contentDescription="@string/label_support"
+                android:onClick="onSupportClick"
+                android:padding="@dimen/button_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_support" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_spacing"
+                android:text="@string/label_support"
+                android:textColor="@color/white"
+                android:textSize="@dimen/label_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
