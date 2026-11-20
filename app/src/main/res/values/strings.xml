@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AssignmentOne</string>
+
+    <!-- Home screen banner -->
+    <string name="banner_title">Welcome to CampusLife - Your Pocket Guide to University of Waikato</string>
+    <string name="banner_image_description">University of Waikato campus building and gardens</string>
+
+    <!-- Topic labels -->
+    <string name="label_facilities">Facilities</string>
+    <string name="label_events">Events</string>
+    <string name="label_clubs">Clubs</string>
+    <string name="label_support">Support</string>
+
+    <!-- Toasts used to confirm that the onClick events fire (Part E) -->
+    <string name="toast_facilities">Facilities clicked</string>
+    <string name="toast_events">Events clicked</string>
+    <string name="toast_clubs">Clubs clicked</string>
+    <string name="toast_support">Support clicked</string>
+
+    <!-- Placeholder text shown by DetailActivity before Part H -->
+    <string name="detail_placeholder_title">This is a title</string>
+    <string name="detail_placeholder_content">This is content</string>
+
+    <!-- Short topic names shown in the DetailActivity header -->
+    <string-array name="topic_header_titles">
+        <item>Facilities</item>
+        <item>Events</item>
+        <item>Clubs</item>
+        <item>Support</item>
+    </string-array>
+
+</resources>
