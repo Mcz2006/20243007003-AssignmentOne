@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Dummy data for the four CampusLife topics (Part H).
+    topic_titles  - the heading shown inside the detail screen
+    topic_details - the body text shown inside the detail screen
+    topic_images  - the name of the drawable used for the topic icon
+-->
+<resources>
+
+    <string-array name="topic_titles">
+        <item>Hamilton &amp; Tauranga Facilities</item>
+        <item>What\'s On Around Campus</item>
+        <item>Clubs &amp; Societies</item>
+        <item>Student Support Services</item>
+    </string-array>
+
+    <string-array name="topic_details">
+        <item>Hamilton Facilities\n- Indoor Courts: We have two indoor courts on campus, including UniRec\'s Sports Hall and the School of Education Court.\n- Outdoor Courts: Our re-purposed outdoor courts include basketball, netball and tennis courts.\n- Outdoor Fields: We have large field space on campus, which can be used for touch, rugby, football, cricket and more.\n- Wellbeing Hub: Find out how you can become part of a community that is engaged, connected and inspired through the Wellbeing Hub.\n- Activity Spaces: UniRec has an Activity Room for hire, perfect for small groups requiring a mirror for dance.\n- Esports Arena: With the development of the Esports Arena, the University of Waikato is committed to leading the way in esports in NZ.\n- Waikato parkrun: A free, fun, and friendly weekly 5k community event. Walk, jog, run, volunteer or spectate - it\'s up to you!\n- Squash Courts: We have squash courts on campus, check out UniRec Squash Courts.\n- Fitness Island: Free for anyone to use, why not try a workout on our new outdoor fitness island equipment.\n- Cricket Nets: Located close to the Don Llewellyn Pavilion, there are three cricket nets available for hire.\nTauranga Facilities\n- Queen Elizabeth Youth Centre (QEYC): A 20-minute walk or five-minute cycle from the Tauranga campus, the QEYC offers indoor courts, a weights room and group fitness classes.\n- Tauranga Sports Fields: Bookable fields and courts at Fergusson Park, a short drive from the city campus.</item>
+
+        <item>Orientation &amp; Welcome\n- International Student Welcome: Meet the international team, your peers and the support staff who look after you.\n- Campus Tours: Guided walks leave from the Student Centre every weekday during the first two weeks of semester.\n- Clubs Day: Every club and society sets up a stall on the Village Green - the fastest way to find your people.\n\nWhat\'s On This Month\n- Research Seminar Series: Weekly talks from Waikato researchers, open to all students, Tuesday 4pm in the Gallagher Academy of Performing Arts.\n- Lunchtime Recitals: Free concerts by music students and visiting artists, Thursdays 12pm.\n- Careers Expo: Meet more than 60 employers and hear what they look for in graduates, Level 1, Student Centre.\n- Matariki Celebrations: Kapa haka, kai and workshops across the week of Matariki.\n- Postgraduate Information Evening: Talk to supervisors about masters and doctoral study.\n- Sustainability Workshop: Learn how the campus is reducing waste and how you can get involved.</item>
+
+        <item>Academic &amp; Faculty Clubs\n- Engineering Society: Site visits, design challenges and the annual robotics competition.\n- Law Students\' Association: Mooting, careers evenings and networking with local firms.\n- Computer Science Club: Weekly coding sessions, hackathons and help with internship applications.\n- Science Society: Field trips, lab tours and guest talks from researchers.\n\nSport &amp; Recreation Clubs\n- Waikato Rowing Club: Novice and competitive squads training on the Waikato River.\n- Netball Club: Social and competitive teams, all levels welcome.\n- Tramping Club: Weekend trips around the Waikato and central North Island.\n- Esports Club: Casual and competitive teams for Valorant, League of Legends and more.\n\nCultural &amp; Community Clubs\n- Waikato International Students\' Association: Cultural nights, buddy programmes and language exchanges.\n- Māori Students\' Association: Whakawhanaungatanga events and academic support.\n- Debating Society: Weekly debates and the inter-university tournament.\n- Volunteering Waikato: One-off and ongoing community projects near campus.</item>
+
+        <item>Academic Support\n- Library and Learning Services: Subject librarians, referencing workshops and one-to-one research help.\n- Te Kura Toi Tangata Writing Support: Feedback on essays, reports and drafts, bookable online.\n\nHealth &amp; Wellbeing\n- Student Health Centre: Doctors and nurses on campus, appointments available weekdays.\n- Counselling Service: Free, confidential appointments with qualified counsellors.\n- Accessibility Services: Support plans, note-taking and assistive technology for students with disabilities.\n\nMoney &amp; Life\n- Student Finances: Budgeting advice, hardship grants and scholarship information.\n- International Student Support: Visa questions, insurance and orientation programmes.\n- Careers and Employability: CV checks, mock interviews and job search coaching.\n- Emergency Contact: Campus Security is available 24/7 on 0800 924 528 for urgent help.</item>
+    </string-array>
+
+    <string-array name="topic_images">
+        <item>ic_facilities</item>
+        <item>ic_events</item>
+        <item>ic_clubs</item>
+        <item>ic_support</item>
+    </string-array>
+
+</resources>
