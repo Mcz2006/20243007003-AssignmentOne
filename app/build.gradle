@@ -1,0 +1,37 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.assignmentone'
+    compileSdk 35
+    buildToolsVersion '34.0.0'
+
+    defaultConfig {
+        applicationId "com.example.assignmentone"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    // Keeps the Kotlin stdlib / jdk7 / jdk8 artifacts on one version, which avoids
+    // duplicate-class errors coming from the transitive Kotlin dependencies.
+    implementation platform('org.jetbrains.kotlin:kotlin-bom:1.8.22')
+
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+}
